@@ -1,0 +1,154 @@
+body {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    padding-top: 80px;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('assets/bg.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-section .container {
+    z-index: 2;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;        
+    border-radius: 50%;
+    object-fit: cover;    
+    border: 4px solid rgba(255,255,255,0.8);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.4s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.modern-btn:hover {
+    background: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section button {
+    animation: fadeUp 1s ease forwards;
+}
+
+.about-section {
+    background: linear-gradient(to bottom, #0f0f0f, #1c1c1c);
+    position: relative;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.modern-progress {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.modern-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    border-radius: 50px;
+    transition: width 1s ease;
+}
+
+.cert-section {
+    background: linear-gradient(to bottom, #1c1c1c, #0f0f0f);
+}
+
+.modern-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.modern-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.card-img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.modern-card:hover img {
+    transform: scale(1.1);
+}
+
+.img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.modern-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
