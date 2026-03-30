@@ -94,7 +94,6 @@ $certificates = mysqli_query($conn, "SELECT * FROM certificates");
                 </div>
             </div>
 
-            <!-- EXPERIENCES -->
             <div class="col-md-6">
                 <div class="glass-card p-4 h-100">
                     <h4 class="mb-4 text-white">Experiences</h4>
@@ -114,7 +113,6 @@ $certificates = mysqli_query($conn, "SELECT * FROM certificates");
     </div>
 </section>
 
-<!-- CERTIFICATES -->
 <section id="certificates" class="cert-section py-5">
     <div class="container">
 
@@ -158,7 +156,6 @@ $certificates = mysqli_query($conn, "SELECT * FROM certificates");
     </div>
 </section>
 
-<!-- SCRIPT -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
